@@ -56,7 +56,9 @@ main {
 }
 
 .fotoprincipal {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   height: auto;
   border-radius: 50%;
   margin: 10px;
@@ -123,7 +125,7 @@ main {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   max-width: 1200px;
   margin: auto;
@@ -327,4 +329,152 @@ html {
 
 #contact {
   scroll-margin-top: 100px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-text {
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .fotoprincipal {
+    width: 350px;
+    max-width: 90%;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+
+  .project-caliope,
+  .project-GiftforFifas,
+  .project-ProfPage,
+  .project-cardpresentation {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    padding: 20px 10px;
+    gap: 30px;
+  }
+
+  .fotoprincipal {
+    width: 280px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 0;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .separator-line {
+    width: 95%;
+  }
+
+  .skills-section {
+    padding: 40px 15px;
+  }
+
+  .skills-subtitle {
+    font-size: 1rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-info {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer-name {
+    font-size: 2rem;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+
+  .footer-links a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .fotoprincipal {
+    width: 220px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .separator-line {
+    width: 100%;
+  }
+
+  .footer-name {
+    font-size: 1.7rem;
+  }
 }
