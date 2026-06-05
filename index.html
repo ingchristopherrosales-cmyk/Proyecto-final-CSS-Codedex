@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Site</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Fonts google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="general">
+    <header>
+      <nav class="navbar navbar-expand-lg" id="navbarcomplete">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Christopher Rosales Lara</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Skills">
+                  <i class="bi bi-code-slash"></i> Skills
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#featured-projects">
+                  <i class="bi bi-folder"></i> Featured Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  <i class="bi bi-envelope"></i> Contact
+                </a>
+              </li>
+            </ul>
+            <span class="navbar-text"> Full Stack Java Developer </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <img
+        src="../img/fotoperfil.jpeg"
+        alt="Profile Picture"
+        class="fotoprincipal"
+      />
+      <div class="separator">
+        <h2 class="hero-title">
+          Hello!<br />
+          I'm Christopher Rosales,<br />
+          a Full Stack Developer
+        </h2>
+        <h3 class="hero-subtitle">
+          <br />
+          I enjoys turning ideas into innovative digital solutions. <br />
+          I build modern web applications by combining frontend and backend
+          technologies,<br />
+          always focusing on performance, scalability, and user experience.<br />
+          Passionate about design and clean code, I strive to create products<br />
+          that are both visually engaging and technically robust.
+        </h3>
+      </div>
+
+      <div id="Skills" class="separator-line">
+        <h2 class="hero-title">Skills</h2>
+      </div>
+
+      <section class="skills-section">
+        <p class="skills-subtitle">
+          Technologies and tools I use to build modern, scalable, and
+          user-focused applications.
+        </p>
+
+        <div class="skills-container">
+          <div class="skill-card">
+            <i class="bi bi-code-slash skill-icon"></i>
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <i class="bi bi-server skill-icon"></i>
+            <h3>Backend</h3>
+            <ul>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <i class="bi bi-database skill-icon"></i>
+            <h3>Databases</h3>
+            <ul>
+              <li>MySQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <i class="bi bi-gear skill-icon"></i>
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>IntelliJ IDEA</li>
+              <li>Visual Studio Code</li>
+              <li>Jira</li>
+              <li>Scrum</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div id="featured-projects" class="separator-line">
+        <h2 class="hero-title">Featured Projects</h2>
+      </div>
+
+      <div class="separator">
+        <div class="projects">
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Project 1: Social Network</h3>
+              <h4>
+                <a
+                  href="https://github.com/ingchristopherrosales-cmyk/Caliope-MVP"
+                  target="_blank"
+                  >Caliope</a
+                >
+              </h4>
+              <p>
+                I developed Caliope, a social networking platform for readers
+                and writers, contributing to both UX/UI design and Full Stack<br />
+                development. My work focused on building key features, creating
+                an intuitive user experience, and developing a<br />
+                scalable and modern web application.
+              </p>
+            </div>
+            <img
+              src="../img/logofinal.png"
+              alt="Caliope Project Image"
+              class="project-caliope"
+            />
+          </div>
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Project 2: E-commerce Platform</h3>
+              <h4>
+                <a
+                  href="https://github.com/ingchristopherrosales-cmyk/Mundo-Fifas"
+                  target="_blank"
+                  >GiftForFifas</a
+                >
+              </h4>
+              <p>
+                I developed GiftforFifas, an e-commerce platform focused on
+                sports merchandise and fan products. I contributed to both<br />
+                frontend and backend development, implementing product<br />
+                management, search and filtering features, responsive<br />
+                interfaces, and data integration to deliver a modern and<br />
+                user-friendly shopping experience.
+              </p>
+            </div>
+            <img
+              src="../img/giftforfifas.png"
+              alt="GiftforFifas Project Image"
+              class="project-GiftforFifas"
+            />
+          </div>
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Project 3: Personal Page</h3>
+              <h4>
+                <a
+                  href="https://github.com/ingchristopherrosales-cmyk/Proyecto-final-CSS-Codedex"
+                  target="_blank"
+                  >Christopher's Professional Projects Page</a
+                >
+              </h4>
+              <p>
+                I designed and developed a personal portfolio website<br />
+                that serves as a central hub for my projects, skills, and<br />
+                professional experience.<br />
+                The platform combines modern UI/UX principles with<br />
+                responsive web development practices, providing an<br />
+                engaging experience while demonstrating my<br />
+                capabilities as a Full Stack Developer.
+              </p>
+            </div>
+            <img
+              src="../img/profpage.png"
+              alt="Personal Page Project Image"
+              class="project-ProfPage"
+            />
+          </div>
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Project 4: Card Presentation</h3>
+              <h4>
+                <a
+                  href="https://github.com/ingchristopherrosales-cmyk/Proyecto-final-HTML-Codedex"
+                  target="_blank"
+                  >Christopher's personal business card</a
+                >
+              </h4>
+              <p>
+                Modern personal business card created to represent <br />
+                my professional brand as a Full Stack Developer.<br />
+                Designed with a minimalist and professional approach,<br />
+                it highlights my skills, contact information, and<br />
+                digital presence while reflecting my passion for<br />
+                technology, design, and web development.
+              </p>
+            </div>
+            <img
+              src="../img/tarjetapres.JPG"
+              alt="Card Presentation Project Image"
+              class="project-cardpresentation"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="separator-line">
+        <h2 class="hero-title">Contact</h2>
+      </div>
+
+      <section class="Contact-me">
+        <p id="contact-subtitle" class="contact-subtitle">
+          I am open to new opportunities and collaborations. Please feel free to
+          contact me using the form below:<br />
+        </p>
+        <form class="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button id="submit-btn" type="submit" class="btn btn-primary">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2 class="footer-name">Christopher Rosales Lara</h2>
+
+        <p class="footer-role">Full Stack Java Developer</p>
+
+        <p class="footer-description">
+          Building modern, scalable and user-focused web applications.
+        </p>
+
+        <div class="footer-links">
+          <a
+            href="https://github.com/ingchristopherrosales-cmyk"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/christopheraldairrosaleslara"
+            target="_blank"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <a href="mailto:ing.christopher.rosales@gmail.com">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+
+          <a href="https://www.codedex.io/@ingChristopher" target="_blank">
+            <i class="bi bi-arrow-up-right-square"></i>
+          </a>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <p class="footer-copy">
+          © 2026 Christopher Rosales Lara. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

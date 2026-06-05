@@ -1,0 +1,330 @@
+body {
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+  margin: 20px;
+  gap: 50px;
+}
+
+#navbarcomplete {
+  background: rgba(247, 234, 201, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  padding: 12px 30px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-text {
+  background: #000;
+  color: white !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.fotoprincipal {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  justify-content: flex-start;
+}
+
+.hero-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  align-self: flex-end;
+}
+
+.hero-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 650px;
+  text-align: center;
+}
+
+.separator-line {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+  width: 90%;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 5px 0;
+}
+
+.skills-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.skills-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.skills-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.skill-card {
+  background: transparent;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.skill-card h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.skill-card li:last-child {
+  border-bottom: none;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.project-caliope {
+  width: 500px;
+  height: 250px;
+  object-fit: contain;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.project-GiftforFifas {
+  width: 500px;
+  height: 250px;
+  object-fit: contain;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.project-ProfPage {
+  width: 500px;
+  height: 250px;
+  object-fit: contain;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.project-cardpresentation {
+  width: 500px;
+  height: 250px;
+  object-fit: contain;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.contact-me {
+  background-color: #f7eac9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 100px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.footer-role {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c9c9c9;
+}
+
+.footer-description {
+  max-width: 600px;
+  margin: 25px auto;
+  line-height: 1.7;
+  color: #bdbdbd;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  transform: translateY(-5px);
+}
+
+.footer-divider {
+  width: 80%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 20px auto;
+}
+
+.footer-copy {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+#submit-btn {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact-form {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#Skills {
+  scroll-margin-top: 100px;
+}
+
+#featured-projects {
+  scroll-margin-top: 100px;
+}
+
+#contact {
+  scroll-margin-top: 100px;
+}
