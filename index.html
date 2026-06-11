@@ -42,21 +42,31 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Skills">
+                <a
+                  id="nav-skills"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#Skills"
+                >
                   <i class="bi bi-code-slash"></i> Skills
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#featured-projects">
+                <a id="nav-projects" class="nav-link" href="#featured-projects">
                   <i class="bi bi-folder"></i> Featured Projects
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">
+                <a id="nav-contact" class="nav-link" href="#contact">
                   <i class="bi bi-envelope"></i> Contact
                 </a>
               </li>
             </ul>
+            <div class="language-switch">
+              <button onclick="changeLanguage('en')">English</button>
+              <button onclick="changeLanguage('es')">Spanish</button>
+              <button onclick="toggleTheme()" id="theme-btn">🌙</button><br />
+            </div>
             <span class="navbar-text"> Full Stack Java Developer </span>
           </div>
         </div>
@@ -69,12 +79,12 @@
         class="fotoprincipal"
       />
       <div class="separator">
-        <h2 class="hero-title">
+        <h2 class="hero-title" id="hero-title">
           Hello!<br />
           I'm Christopher Rosales,<br />
           a Full Stack Developer
         </h2>
-        <h3 class="hero-subtitle">
+        <h3 class="hero-subtitle" id="hero-subtitle">
           <br />
           I enjoys turning ideas into innovative digital solutions. <br />
           I build modern web applications by combining frontend and backend
@@ -83,14 +93,48 @@
           Passionate about design and clean code, I strive to create products<br />
           that are both visually engaging and technically robust.
         </h3>
+
+        <div class="hero-buttons">
+          <a
+            id="view-projects-btn"
+            href="#featured-projects"
+            class="btn-projects"
+            >View Projects</a
+          >
+          <a
+            id="download-cv-btn"
+            href="../cv/CV-English-Christopher-Rosales.pdf"
+            class="btn-cv"
+            target="_blank"
+          >
+            Download CV
+          </a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <h2>4+</h2>
+            <p id="stat-projects">Projects</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>Java</h2>
+            <p id="stat-backend">Backend</p>
+          </div>
+
+          <div class="stat-card">
+            <h2 id="stat-work-title">Open</h2>
+            <p id="stat-work">To Work</p>
+          </div>
+        </div>
       </div>
 
       <div id="Skills" class="separator-line">
-        <h2 class="hero-title">Skills</h2>
+        <h2 class="hero-title" id="skills-title">Skills</h2>
       </div>
 
       <section class="skills-section">
-        <p class="skills-subtitle">
+        <p id="skills-subtitle" class="skills-subtitle">
           Technologies and tools I use to build modern, scalable, and
           user-focused applications.
         </p>
@@ -98,7 +142,7 @@
         <div class="skills-container">
           <div class="skill-card">
             <i class="bi bi-code-slash skill-icon"></i>
-            <h3>Frontend</h3>
+            <h3 id="frontend-title">Frontend</h3>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -109,7 +153,7 @@
 
           <div class="skill-card">
             <i class="bi bi-server skill-icon"></i>
-            <h3>Backend</h3>
+            <h3 id="backend-title">Backend</h3>
             <ul>
               <li>Java</li>
               <li>Spring Boot</li>
@@ -119,7 +163,7 @@
 
           <div class="skill-card">
             <i class="bi bi-database skill-icon"></i>
-            <h3>Databases</h3>
+            <h3 id="databases-title">Databases</h3>
             <ul>
               <li>MySQL</li>
             </ul>
@@ -127,7 +171,7 @@
 
           <div class="skill-card">
             <i class="bi bi-gear skill-icon"></i>
-            <h3>Tools</h3>
+            <h3 id="tools-title">Tools</h3>
             <ul>
               <li>Git</li>
               <li>GitHub</li>
@@ -141,14 +185,14 @@
       </section>
 
       <div id="featured-projects" class="separator-line">
-        <h2 class="hero-title">Featured Projects</h2>
+        <h2 class="hero-title" id="projects-title">Featured Projects</h2>
       </div>
 
       <div class="separator">
         <div class="projects">
           <div class="project-card">
             <div class="project-info">
-              <h3>Project 1: Social Network</h3>
+              <h3 id="project1-title">Project 1: Social Network</h3>
               <h4>
                 <a
                   href="https://github.com/ingchristopherrosales-cmyk/Caliope-MVP"
@@ -156,7 +200,22 @@
                   >Caliope</a
                 >
               </h4>
-              <p>
+
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+
+                <span class="tag">HTML</span>
+
+                <span class="tag">CSS</span>
+
+                <span class="tag">Spring Boot</span>
+
+                <span class="tag">MySQL</span>
+
+                <span class="tag">Bootstrap</span>
+              </div>
+
+              <p id="project1-desc">
                 I developed Caliope, a social networking platform for readers
                 and writers, contributing to both UX/UI design and Full Stack<br />
                 development. My work focused on building key features, creating
@@ -172,7 +231,7 @@
           </div>
           <div class="project-card">
             <div class="project-info">
-              <h3>Project 2: E-commerce Platform</h3>
+              <h3 id="project2-title">Project 2: E-commerce Platform</h3>
               <h4>
                 <a
                   href="https://github.com/ingchristopherrosales-cmyk/Mundo-Fifas"
@@ -180,7 +239,17 @@
                   >GiftForFifas</a
                 >
               </h4>
-              <p>
+
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+
+              <p id="project2-desc">
                 I developed GiftforFifas, an e-commerce platform focused on
                 sports merchandise and fan products. I contributed to both<br />
                 frontend and backend development, implementing product<br />
@@ -197,7 +266,7 @@
           </div>
           <div class="project-card">
             <div class="project-info">
-              <h3>Project 3: Personal Page</h3>
+              <h3 id="project3-title">Project 3: Personal Page</h3>
               <h4>
                 <a
                   href="https://github.com/ingchristopherrosales-cmyk/Proyecto-final-CSS-Codedex"
@@ -205,7 +274,18 @@
                   >Christopher's Professional Projects Page</a
                 >
               </h4>
-              <p>
+
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+
+                <span class="tag">HTML</span>
+
+                <span class="tag">CSS</span>
+
+                <span class="tag">Bootstrap</span>
+              </div>
+
+              <p id="project3-desc">
                 I designed and developed a personal portfolio website<br />
                 that serves as a central hub for my projects, skills, and<br />
                 professional experience.<br />
@@ -223,7 +303,7 @@
           </div>
           <div class="project-card">
             <div class="project-info">
-              <h3>Project 4: Card Presentation</h3>
+              <h3 id="project4-title">Project 4: Card Presentation</h3>
               <h4>
                 <a
                   href="https://github.com/ingchristopherrosales-cmyk/Proyecto-final-HTML-Codedex"
@@ -231,7 +311,18 @@
                   >Christopher's personal business card</a
                 >
               </h4>
-              <p>
+
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+
+                <span class="tag">HTML</span>
+
+                <span class="tag">CSS</span>
+
+                <span class="tag">Bootstrap</span>
+              </div>
+
+              <p id="project4-desc">
                 Modern personal business card created to represent <br />
                 my professional brand as a Full Stack Developer.<br />
                 Designed with a minimalist and professional approach,<br />
@@ -250,7 +341,7 @@
       </div>
 
       <div id="contact" class="separator-line">
-        <h2 class="hero-title">Contact</h2>
+        <h2 class="hero-title" id="contact-title">Contact</h2>
       </div>
 
       <section class="Contact-me">
@@ -260,15 +351,17 @@
         </p>
         <form class="contact-form">
           <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
+            <label id="label-name" for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" required />
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
+            <label id="label-email" for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" required />
           </div>
           <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
+            <label id="label-message" for="message" class="form-label"
+              >Message</label
+            >
             <textarea
               class="form-control"
               id="message"
@@ -289,7 +382,7 @@
 
         <p class="footer-role">Full Stack Java Developer</p>
 
-        <p class="footer-description">
+        <p id="footer-description" class="footer-description">
           Building modern, scalable and user-focused web applications.
         </p>
 
@@ -319,7 +412,7 @@
 
         <div class="footer-divider"></div>
 
-        <p class="footer-copy">
+        <p id="footer-copy" class="footer-copy">
           © 2026 Christopher Rosales Lara. All rights reserved.
         </p>
       </div>
@@ -327,5 +420,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="language.js"></script>
   </body>
 </html>
